@@ -1,5 +1,5 @@
 # noteApp
-A simple react native note app for learning Props, state, list rendering
+A simple React Vative note app for learning Props, State, List rendering
 
 ## Installation
 
