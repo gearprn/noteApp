@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { StyleSheet, Text, View, TextInput, TouchableOpacity, ScrollView } from 'react-native';
+import { StyleSheet, Text, View, TextInput, TouchableOpacity, ScrollView, Image } from 'react-native';
 import Note from '../components/Note'
 
 const Home = () => {
@@ -31,6 +31,10 @@ const Home = () => {
 
     return (
         <View style={styles.container}>
+            <Image
+                style={styles.tinyLogo}
+                source={require('../../assets/it_logo.png')}
+            />
             <Text>Note</Text>
             <TextInput
                 style={styles.input}
@@ -75,6 +79,13 @@ const styles = StyleSheet.create({
         marginTop: 5,
         backgroundColor: '#5ec4ff'
     },
+    tinyLogo: {
+        position: 'absolute',
+        right: 15,
+        bottom: 15,
+        width: 50,
+        height: 50,
+      },
     scrollView: {
         width: '100%',
     }
